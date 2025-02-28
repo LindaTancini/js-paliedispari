@@ -18,3 +18,13 @@ console.log(sum);
 function isEven(number) {
   return number % 2 === 0;
 }
+
+// chi ha vinto?
+if (
+  (isEven(sum) && userNumber === "pari") ||
+  (!isEven(sum) && userNumber === "dispari")
+) {
+  console.log("Hai vinto");
+} else {
+  console.log("Hai perso");
+}
