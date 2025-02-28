@@ -6,3 +6,7 @@ console.log(userNumber);
 function getRandomNumber() {
   return Math.floor(Math.random() * 5) + 1;
 }
+
+// somma numeri
+let computerNumber = getRandomNumber();
+let sum = userNumber + computerNumber;
