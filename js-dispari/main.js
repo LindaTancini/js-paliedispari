@@ -15,7 +15,6 @@ console.log(computerNumber);
 console.log(sum);
 
 // la somma è pari?
-
 function isEven(number) {
   return number % 2 === 0;
 }
