@@ -6,25 +6,29 @@ console.log(userNumber);
 function randomPcNumber() {
   return Math.floor(Math.random() * 5) + 1;
 }
-randomPcNumber();
 
-// somma numeri
-let computerNumber = randomPcNumber();
-let sum = userNumber + computerNumber;
-console.log(computerNumber);
-console.log(sum);
+function play(userNumber) {
+  if (userNumber < 1 || userNumber > 5) {
+    console.log("Errore: scegli un numero tra 1 e 5.");
+    return;
+  }
+}
 
 // la somma è pari?
 function isEven(number) {
   return number % 2 === 0;
 }
 
+// somma numeri
+let computerNumber = randomPcNumber();
+let sum = userNumber + computerNumber;
+const result = isEven(sum) ? "pari" : "dispari";
+console.log(computerNumber);
+console.log(sum);
+
 // chi ha vinto?
-if (
-  (isEven(sum) && userNumber === "pari") ||
-  (!isEven(sum) && userNumber === "dispari")
-) {
-  console.log("Hai vinto");
+if (userNumber === result) {
+  console.log("Hai vinto!");
 } else {
-  console.log("Hai perso");
+  console.log("Hai perso!");
 }
