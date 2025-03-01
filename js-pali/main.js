@@ -14,3 +14,10 @@ function palindroma(word) {
   }
   return true;
 }
+
+// è palindroma?
+if (palindroma(word)) {
+  alert("La parola è palindroma");
+} else {
+  alert("La parola non è palindroma");
+}
