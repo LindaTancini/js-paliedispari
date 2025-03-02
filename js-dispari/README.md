@@ -4,8 +4,9 @@ _L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un 
 
 ## Procedimento
 
-- 1: utente sceglie un numero da 1 a 5
-- 2: il pc sceglie un numero random da 1 a 5 (con funzione)
-- 3: sommo i numeri
-- 4: con una funzione stabiliamo se la somma è pari o dispari
-- 5: dichiaro chi ha vinto
+- 1: utente sceglie pari o dispari
+- 2: utente sceglie un numero da 1 a 5
+- 3: il pc sceglie un numero random da 1 a 5 (con funzione)
+- 5: sommo i numeri
+- 5: con una funzione stabiliamo se la somma è pari o dispari
+- 6: dichiaro chi ha vinto
