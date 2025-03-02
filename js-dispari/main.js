@@ -17,21 +17,21 @@ if (userNumber < 1 || userNumber > 5) {
   console.log("Errore: devi scegliere 'pari' o 'dispari'.");
 }
 
+// somma numeri
+let computerNumber = randomPcNumber();
+let sum = userNumber + computerNumber;
+console.log(computerNumber);
+console.log(sum);
+
 // la somma è pari?
 function isEven(number) {
   return number % 2 === 0;
 }
-
-// somma numeri
-let computerNumber = randomPcNumber();
-let sum = userNumber + computerNumber;
 const result = isEven(sum) ? "pari" : "dispari";
-console.log(computerNumber);
-console.log(sum);
 
 // chi ha vinto?
-if (userNumber === result) {
-  console.log("Hai vinto!");
+if (userChoice === result) {
+  alert("Hai vinto!");
 } else {
-  console.log("Hai perso!");
+  alert("Hai perso!");
 }
