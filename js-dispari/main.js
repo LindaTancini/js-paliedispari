@@ -10,11 +10,11 @@ function randomPcNumber() {
   return Math.floor(Math.random() * 5) + 1;
 }
 
-function play(userNumber) {
-  if (userNumber < 1 || userNumber > 5) {
-    console.log("Errore: scegli un numero tra 1 e 5.");
-    return;
-  }
+// controllo se utente inserisce un numero e  pari o dispari
+if (userNumber < 1 || userNumber > 5) {
+  console.log("Errore: devi inserire un numero tra 1 e 5.");
+} else if (userChoice !== "pari" && userChoice !== "dispari") {
+  console.log("Errore: devi scegliere 'pari' o 'dispari'.");
 }
 
 // la somma è pari?
